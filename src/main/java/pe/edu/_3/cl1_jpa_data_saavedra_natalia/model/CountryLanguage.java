@@ -5,6 +5,7 @@ import lombok.Data;
 import pe.edu._3.cl1_jpa_data_saavedra_natalia.model.pk.CountryLanguageId;
 
 @Data
+@Entity
 @Table(name = "countryLanguage")
 public class CountryLanguage {
     @EmbeddedId

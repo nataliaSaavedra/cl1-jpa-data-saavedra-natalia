@@ -42,6 +42,6 @@ public class Country {
     private String code2;
     @OneToMany(mappedBy = "country", cascade = CascadeType.REMOVE)
     private List<City> cities;
-    @OneToMany(mappedBy = "country", cascade = CascadeType.REMOVE)
+    @OneToMany(mappedBy = "country", cascade = CascadeType.REMOVE, fetch = FetchType.EAGER)
     private List<CountryLanguage> languages;
 }
